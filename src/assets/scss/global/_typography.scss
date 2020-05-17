@@ -1,0 +1,11 @@
+.text-shadow-wrapper {
+  text-align: center;
+  max-width: 700px;
+
+  .text {
+    @include push-center;
+    font-size: 72px;
+    font-weight: 900;
+    text-shadow: 20px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+}
