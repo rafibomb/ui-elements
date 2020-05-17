@@ -1,0 +1,29 @@
+---
+meta-title: Rock, Paper, Scissors
+---
+
+<section class="section" id="rpsGame">
+  <header class="rps-header">
+    <h1>Rock Paper Scissors</h1>
+    <button class="rps-button-restart" id="restart">Restart</button>
+    <div class="rps-score" id="score">
+      <p>Player: 0</p>
+      <p>Computer: 0</p>
+    </div>
+  </header>
+
+  <h2>Make your selection</h2>
+  <div class="rps-choices">
+    <button class="rps-choice" type="button" id="rock"><img src="{{root}}assets/img/icons/rock-icon.svg" alt="rock choice icon" inject-svg></button>
+    <button class="rps-choice" type="button" id="paper"><img src="{{root}}assets/img/icons/paper-icon.svg" alt="paper choice icon" inject-svg></button>
+    <button class="rps-choice" type="button" id="scissors"><img src="{{root}}assets/img/icons/scissors-icon.svg" alt="scissors choice icon" inject-svg></button>
+  </div>
+
+  <div class="modal-overlay" id="resultModal">
+    <div class="modal-window" id="result">
+      <h1 class="rps-text-win">You win!</h1>
+      <img height="100" width="100" src="{{root}}assets/img/icons/rock-icon.svg" alt="rock choice icon">
+      <p>The dumb machine chose Rock</p>
+    </div>
+  </div>
+</section>

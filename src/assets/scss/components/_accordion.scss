@@ -1,0 +1,66 @@
+$accordion-background: #fefefe;
+$accordion-title-font-size: 1rem;
+$accordion-title-color: #333;
+$accordion-border: 1px solid #e6e6e6;
+$accordion-side-padding: 1rem;
+$accordion-vert-padding: 1.25rem;
+$accordion-content-transition-timing: cubic-bezier(0.5, 0, 0.75, 0);
+$accordion-content-transition-durration: 0.3s;
+$accordion-title-indicator-size: 16px;
+
+.accordion {
+  margin-left: 0;
+  background: $accordion-background;
+  list-style-type: none;
+}
+
+.accordion-item {
+  overflow: hidden;
+  background: $accordion-background;
+}
+
+.accordion-title {
+  position: relative;
+  display: block;
+  padding: $accordion-vert-padding $accordion-side-padding;
+  border: $accordion-border;
+  border-bottom: 0;
+  font-size: $accordion-title-font-size;
+  line-height: 1;
+  color: $accordion-title-color;
+  text-decoration: none;
+}
+
+.is-active > .accordion-title::before {
+  transform: rotate(180deg);
+}
+
+.accordion-title::before {
+  @include transition(transform $accordion-content-transition-durration ease);
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  margin-top: -6px;
+  content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M47.2,69.3c1.8,1.8,4.7,1.8,6.4,0l40.3-40.3c2-2,2-5.2,0-7.2c-2-2-5.2-2-7.2,0L53.6,54.9  c-1.8,1.8-4.7,1.8-6.4,0L14.1,21.9c-2-2-5.2-2-7.2,0c-2,2-2,5.2,0,7.2L47.2,69.3z"/></svg>');
+  height: $accordion-title-indicator-size;
+  width: $accordion-title-indicator-size;
+}
+
+.accordion-content {
+  @include transition(
+    max-height $accordion-content-transition-durration
+      $accordion-content-transition-timing
+  );
+  max-height: 0;
+  overflow: hidden;
+  border: $accordion-border;
+  border-top: 0;
+
+  &.is-active {
+    overflow: visible;
+  }
+}
+
+.accordion-content-inner {
+  padding: 0 $accordion-side-padding $accordion-vert-padding;
+}

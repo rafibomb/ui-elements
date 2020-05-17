@@ -1,0 +1,87 @@
+$rps-lose-color: $alert-color;
+$rps-win-color: $success-color;
+$modal-duration: 1s;
+
+.rps-header {
+  text-align: center;
+}
+
+.rps-button-restart {
+  @include transition(background-color);
+  display: inline-block;
+  background-color: $primary-color;
+  color: $black;
+  padding: rem-calc(10 35);
+
+  &:hover {
+    background-color: lighten($primary-color, 20%);
+  }
+}
+
+.rps-score {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 2rem;
+  color: $white;
+
+  p:first-of-type {
+    background-color: $black;
+  }
+
+  p:last-of-type {
+    background-color: $gray300;
+  }
+}
+
+.rps-choices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+
+  img,
+  svg {
+    @include transition(fill);
+    height: 150px;
+    width: 150px;
+    pointer-events: none;
+  }
+
+  svg:hover {
+    fill: $primary-color;
+  }
+}
+
+.rps-choice {
+}
+
+.rps-text-lose {
+  color: $rps-lose-color;
+}
+
+.rps-text-win {
+  color: $rps-win-color;
+}
+
+.modal-overlay {
+  animation: fade-in $modal-duration;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba($black, 0.5);
+}
+
+.modal-window {
+  background-color: $white;
+  text-align: center;
+  margin: 10vh auto;
+  border-radius: 10px;
+  padding: 3rem;
+  box-shadow: 0 5px 8px 0 rgba($black, 0.2), 0 7px 20px 0 rgba($black, 0.17);
+  max-width: 350px;
+}

@@ -1,0 +1,42 @@
+.input-group {
+  display: flex;
+}
+
+.number-increment {
+  .input,
+  .button {
+    padding: 0.5rem 0.8rem;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background-color: lightgrey;
+    }
+  }
+
+  .input {
+    max-width: 3rem;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .decrement {
+    border-left: solid 2px black;
+  }
+
+  .increment {
+    border-right: solid 2px black;
+  }
+}
