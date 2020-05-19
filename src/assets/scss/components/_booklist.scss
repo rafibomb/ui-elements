@@ -1,0 +1,39 @@
+.booklist-form {
+  input {
+    width: 100%;
+    display: block;
+  }
+
+  .button {
+    padding: rem-calc(15 32);
+    background: #eee;
+    width: 100%;
+  }
+}
+
+.booklist-table {
+  width: 100%;
+  margin-top: 3rem;
+  border-collapse: collapse;
+
+  td,
+  th {
+    text-align: left;
+    padding: rem-calc(7 12);
+    border: $container-border;
+  }
+
+  tbody td {
+    .button {
+      padding: rem-calc(7);
+      background-color: red;
+      text-decoration: none;
+    }
+  }
+
+  tbody tr {
+    &:nth-child(odd) {
+      background: #eee;
+    }
+  }
+}

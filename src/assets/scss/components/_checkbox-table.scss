@@ -1,0 +1,59 @@
+.dynamic-checkbox-group {
+  .table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+  }
+
+  .table thead th {
+    border-bottom: 2px solid #dee2e6;
+    border-top: 0;
+    vertical-align: bottom;
+    user-select: none;
+  }
+
+  .table td,
+  .table th {
+    padding: 0.75rem;
+    border-top: 1px solid #dee2e6;
+    user-select: none;
+  }
+
+  td.title {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+  }
+
+  button {
+    background: #f4f4f4;
+    padding: 10px 16px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    appearance: none;
+    border: 0;
+    border-radius: 8px;
+    line-height: normal;
+
+    &:hover {
+      background: #f0f0f0;
+      cursor: pointer;
+    }
+  }
+
+  .published {
+    display: flex;
+    align-items: center;
+
+    label {
+      margin-left: 16px;
+      font-family: 'Georgia', serif;
+      font-size: 16px;
+      font-style: italic;
+    }
+  }
+
+  input[type='checkbox']:checked + label {
+    text-decoration: line-through;
+  }
+}

@@ -6,6 +6,8 @@ require('./animate-on-scroll');
 
 // components
 require('./accordion');
+require('./booklist');
+require('./dynamic-checkboxes');
 require('./header-canvas');
 require('./rock-paper-scissors');
 require('./number-increment');
