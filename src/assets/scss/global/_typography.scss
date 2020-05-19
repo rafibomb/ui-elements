@@ -9,3 +9,17 @@
     text-shadow: 20px 20px 0 rgba(0, 0, 0, 0.1);
   }
 }
+
+.text-fancy {
+  span {
+    @include transition(opacity 0.5s ease, transform 0.5s ease);
+    opacity: 0;
+    transform: translateY(50px);
+    display: inline-block;
+
+    &.fade {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+}
