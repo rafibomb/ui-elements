@@ -16,3 +16,5 @@ require('./year-fact-generator');
 require('./text-shadow');
 require('./text-animate');
 require('./password-reveal');
+require('./parallax');
+require('./smooth-scroll');

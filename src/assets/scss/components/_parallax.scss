@@ -1,0 +1,31 @@
+.section-vh {
+  height: 100vh;
+}
+
+.parallax-page {
+}
+
+.split-title {
+  margin: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  li {
+    font-size: 100px;
+  }
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: $black;
+  border-radius: 50%;
+}
