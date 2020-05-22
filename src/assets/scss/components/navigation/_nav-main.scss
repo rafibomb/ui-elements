@@ -1,1 +1,55 @@
+.nav {
+  @include flex-centerer;
+  height: 10vh;
+}
 
+.nav-list {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  list-style-type: none;
+
+  .nav-links {
+    text-decoration: none;
+    color: $black;
+    font-size: 18px;
+  }
+}
+
+.home,
+.about {
+  height: 90vh;
+  position: absolute;
+  width: 100%;
+}
+
+.home-content,
+.about-conent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+
+  img {
+    height: 70%;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin: 50px 0;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.home {
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.about {
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}

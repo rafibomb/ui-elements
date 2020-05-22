@@ -15,6 +15,9 @@ require('./filter-list');
 require('./year-fact-generator');
 require('./text-shadow');
 require('./text-animate');
+require('./page-transition');
 require('./password-reveal');
 require('./parallax');
 require('./smooth-scroll');
+
+import Highway from '@dogstudio/highway';
