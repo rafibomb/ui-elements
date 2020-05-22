@@ -10,6 +10,7 @@ require('./accordion');
 require('./dynamic-checkboxes');
 require('./header-canvas');
 require('./rock-paper-scissors');
+require('./modal');
 require('./number-increment');
 require('./filter-list');
 require('./year-fact-generator');
