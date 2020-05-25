@@ -1,0 +1,41 @@
+.carousel-wrapper {
+  position: relative;
+}
+
+.carousel-arrow {
+  @include vertical-center;
+
+  img,
+  svg {
+    height: 50px;
+    width: 50px;
+
+    g {
+      fill: $white;
+    }
+  }
+
+  &.carousel-arrow-prev {
+    left: 1rem;
+  }
+
+  &.carousel-arrow-next {
+    right: 1rem;
+  }
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide-content {
+  @extend .section;
+  @include flex-centerer;
+  color: $white;
+
+  figcaption {
+    font-size: 50px;
+  }
+}

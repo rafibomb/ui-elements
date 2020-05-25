@@ -9,6 +9,8 @@ require('./accordion');
 // require('./booklist');
 require('./dynamic-checkboxes');
 require('./header-canvas');
+require('./image-carousel');
+require('./image-carousel2');
 require('./rock-paper-scissors');
 require('./modal');
 require('./number-increment');
