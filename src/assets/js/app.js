@@ -7,6 +7,7 @@ require('./animate-on-scroll');
 // components
 require('./accordion');
 // require('./booklist');
+require('./budget');
 require('./dynamic-checkboxes');
 require('./header-canvas');
 require('./image-carousel');
