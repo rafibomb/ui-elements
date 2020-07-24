@@ -7,7 +7,7 @@ require('./animate-on-scroll');
 // components
 require('./accordion');
 // require('./booklist');
-require('./budget');
+// require('./budget');
 require('./dynamic-checkboxes');
 require('./header-canvas');
 require('./image-carousel');
@@ -22,3 +22,4 @@ require('./text-animate');
 require('./password-reveal');
 require('./parallax');
 require('./smooth-scroll');
+require('./video-scroll-control');
